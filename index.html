@@ -1,0 +1,30 @@
+<!DOCTYPE html> <! -- document type -->
+<html lang="en"> <! -- language -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyVaccination Form</title> <! -- title -->
+    <link rel="stylesheet" href="styles.css"> <! -- links to CSS file -->
+</head>
+<body>
+    <h1>Submit Your Vaccination Data</h1> <! -- heading -->
+    <form id="vaccinationForm"> <! -- this section is for the form -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+        
+        <label for="vaccine">Vaccine:</label>
+        <input type="text" id="vaccine" name="vaccine" required>
+        
+        <button type="submit">Submit</button>
+    </form>
+    
+    <h2>Submitted Responses</h2> <! -- has all submitted responses -->
+    <button id="fetchResponses">Fetch All Responses</button>
+    <div id="responses"></div>
+
+    <script src="scripts.js"></script> 
+</body>
+</html>
